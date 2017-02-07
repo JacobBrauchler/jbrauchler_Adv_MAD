@@ -11,9 +11,9 @@ import UIKit
 class FourthViewController: UIViewController {
 
     @IBAction func goToMusic(_ sender: Any) {
-        if(UIApplication.shared.canOpenURL(URL(string: "spotify://http://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI")!)){
+        if(UIApplication.shared.canOpenURL(URL(string: "spotify://")!)){
             //open the app with this URL scheme
-            UIApplication.shared.open(URL(string: "spotify://http://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI")!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: "spotify://")!, options: [:], completionHandler: nil)
         }else {
             if(UIApplication.shared.canOpenURL(URL(string: "music://")!)){
                 UIApplication.shared.open(URL(string: "music://")!, options: [:], completionHandler: nil)

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Fourth View Controller-->
         <scene sceneID="Zwc-lU-UMW">
             <objects>
                 <viewController id="Ppx-gS-tjp" customClass="FourthViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,13 +39,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="4dg-Kl-PIc"/>
+                    <tabBarItem key="tabBarItem" title="" image="ipod" id="4dg-Kl-PIc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7G-lK-WYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2" y="-813"/>
         </scene>
-        <!--First-->
+        <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,7 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-6P-tTg">
-                                <rect key="frame" x="28" y="226" width="320" height="216"/>
+                                <rect key="frame" x="27" y="226" width="320" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="9pv-A4-QxB" id="N14-bj-E0R"/>
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="McC-Wz-Lnd"/>
@@ -85,7 +85,7 @@
                             <constraint firstItem="2Nx-6P-tTg" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="cpH-aU-jJO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="" image="note" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="choiceLabel" destination="4xi-bi-RtB" id="JCF-Uh-uD3"/>
                         <outlet property="musicPicker" destination="2Nx-6P-tTg" id="KOR-P7-GdA"/>
@@ -95,7 +95,7 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Item-->
+        <!--Third View Controller-->
         <scene sceneID="plV-JG-IuF">
             <objects>
                 <viewController id="dhp-eA-4zG" customClass="ThirdViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
@@ -135,7 +135,7 @@
                             <constraint firstItem="y8M-WM-He2" firstAttribute="centerX" secondItem="Afs-UQ-CzL" secondAttribute="centerX" id="cbl-8u-Hll"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="3ri-3M-0d2"/>
+                    <tabBarItem key="tabBarItem" title="" image="headphones" id="3ri-3M-0d2"/>
                     <connections>
                         <outlet property="artistPicker" destination="y8M-WM-He2" id="HMp-vl-p05"/>
                         <outlet property="choiceLabel" destination="byd-XE-baM" id="NLA-Lp-iiu"/>
@@ -145,7 +145,7 @@
             </objects>
             <point key="canvasLocation" x="-2.3999999999999999" y="842.42878560719646"/>
         </scene>
-        <!--Second-->
+        <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
@@ -165,7 +165,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55v-X5-zF2">
-                                <rect key="frame" x="28" y="226" width="320" height="216"/>
+                                <rect key="frame" x="27" y="226" width="320" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8rJ-Kc-sve" id="g1V-pO-V0L"/>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="DlQ-f9-7rR"/>
@@ -185,7 +185,7 @@
                             <constraint firstItem="55v-X5-zF2" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="qqf-et-4yi"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="" image="note2" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="choiceLabel" destination="1Rz-CN-6ry" id="Qfu-Fi-SXy"/>
                         <outlet property="musicPicker" destination="55v-X5-zF2" id="50v-lc-IkP"/>
@@ -218,7 +218,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="headphones" width="22" height="21"/>
+        <image name="ipod" width="17" height="29"/>
+        <image name="note" width="15" height="24"/>
+        <image name="note2" width="23" height="23"/>
     </resources>
 </document>
