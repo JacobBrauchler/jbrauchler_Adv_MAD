@@ -12,6 +12,8 @@
 		FFC505BF1E4A484E00A798B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC505BE1E4A484E00A798B3 /* Assets.xcassets */; };
 		FFC505C21E4A484E00A798B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC505C01E4A484E00A798B3 /* LaunchScreen.storyboard */; };
 		FFC505CB1E4A48EA00A798B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC505C91E4A48EA00A798B3 /* Main.storyboard */; };
+		FFC505CD1E4A4AA000A798B3 /* qwordswithoutu1.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFC505CC1E4A4AA000A798B3 /* qwordswithoutu1.plist */; };
+		FFC505E41E4A560E00A798B3 /* SearchResultsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC505E31E4A560E00A798B3 /* SearchResultsControllerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FFC505C11E4A484E00A798B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC505C31E4A484F00A798B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFC505CA1E4A48EA00A798B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFC505CC1E4A4AA000A798B3 /* qwordswithoutu1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = qwordswithoutu1.plist; sourceTree = "<group>"; };
+		FFC505E31E4A560E00A798B3 /* SearchResultsControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsControllerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				FFC505B71E4A484E00A798B3 /* AppDelegate.swift */,
 				FFC505B91E4A484E00A798B3 /* ViewController.swift */,
+				FFC505E31E4A560E00A798B3 /* SearchResultsControllerTableViewController.swift */,
 				FFC505BE1E4A484E00A798B3 /* Assets.xcassets */,
 				FFC505C91E4A48EA00A798B3 /* Main.storyboard */,
 				FFC505C01E4A484E00A798B3 /* LaunchScreen.storyboard */,
 				FFC505C31E4A484F00A798B3 /* Info.plist */,
+				FFC505CC1E4A4AA000A798B3 /* qwordswithoutu1.plist */,
 			);
 			path = scrabbleQ;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC505CB1E4A48EA00A798B3 /* Main.storyboard in Resources */,
+				FFC505CD1E4A4AA000A798B3 /* qwordswithoutu1.plist in Resources */,
 				FFC505C21E4A484E00A798B3 /* LaunchScreen.storyboard in Resources */,
 				FFC505BF1E4A484E00A798B3 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC505BA1E4A484E00A798B3 /* ViewController.swift in Sources */,
+				FFC505E41E4A560E00A798B3 /* SearchResultsControllerTableViewController.swift in Sources */,
 				FFC505B81E4A484E00A798B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
