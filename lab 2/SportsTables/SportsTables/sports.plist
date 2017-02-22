@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Alabama</key>
+	<array/>
+	<key>Alaska</key>
+	<array/>
+	<key>Arizona</key>
+	<array/>
+	<key>Arkansas</key>
+	<array/>
+	<key>California</key>
+	<array/>
+	<key>Colorado</key>
+	<array>
+		<string>Denver Broncos</string>
+		<string>Colorado Avalanche</string>
+		<string>Colorado Rockies</string>
+		<string>Denver Nuggets</string>
+	</array>
+	<key>Connecticut</key>
+	<array/>
+	<key>Delaware</key>
+	<array/>
+	<key>Florida</key>
+	<array/>
+	<key>Georgia</key>
+	<array/>
+	<key>Hawaii</key>
+	<array/>
+	<key>Idaho</key>
+	<array/>
+	<key>Illinois</key>
+	<array/>
+	<key>Indiana</key>
+	<array/>
+	<key>Iowa</key>
+	<array/>
+	<key>Kansas</key>
+	<array/>
+	<key>Kentucky</key>
+	<array/>
+	<key>Louisiana</key>
+	<array/>
+	<key>Maine</key>
+	<array/>
+	<key>Maryland</key>
+	<array/>
+	<key>Massachusetts</key>
+	<array/>
+	<key>Michigan</key>
+	<array/>
+	<key>Minnesota</key>
+	<array/>
+	<key>Mississippi</key>
+	<array/>
+	<key>Missouri</key>
+	<array/>
+	<key>Montana</key>
+	<array/>
+	<key>Nebraska</key>
+	<array/>
+	<key>Nevada</key>
+	<array/>
+	<key>New Hampshire</key>
+	<array/>
+	<key>New Jersey</key>
+	<array/>
+	<key>New Mexico</key>
+	<array/>
+	<key>New York</key>
+	<array>
+		<string>New York Yankees</string>
+		<string>New York Mets</string>
+		<string>New York Jets</string>
+		<string>New York Giants</string>
+		<string>New York Islanders</string>
+		<string>New York Rangers</string>
+	</array>
+	<key>North Carolina</key>
+	<array/>
+	<key>North Dakota</key>
+	<array/>
+	<key>Ohio</key>
+	<array/>
+	<key>Oklahoma</key>
+	<array/>
+	<key>Oregon</key>
+	<array/>
+	<key>Pensylvania</key>
+	<array>
+		<string>Pitsburgh Steelers</string>
+		<string>Pitsburgh Pirates</string>
+	</array>
+	<key>Rhode Island</key>
+	<array/>
+	<key>South Carolina</key>
+	<array/>
+	<key>South Dakota</key>
+	<array/>
+	<key>Tennessee</key>
+	<array/>
+	<key>Texas</key>
+	<array/>
+	<key>Utah</key>
+	<array/>
+	<key>Vermont</key>
+	<array/>
+	<key>Virginia</key>
+	<array/>
+	<key>Washington</key>
+	<array/>
+	<key>West Virginia</key>
+	<array/>
+	<key>Wisconsin</key>
+	<array/>
+	<key>Wyoming</key>
+	<array/>
+</dict>
+</plist>
