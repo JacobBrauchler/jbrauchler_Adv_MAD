@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "40ADFA06B9E2BA23D297A51FF0EFF4F649B7ABA1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "40ADFA06B9E2BA23D297A51FF0EFF4F649B7ABA1" : 9223372036854775807,
+    "B14778957D60C6D2FB582B8C5E93820323584195" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9DAF6542-1AB3-40F5-979B-27271674D890",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "40ADFA06B9E2BA23D297A51FF0EFF4F649B7ABA1" : "jbrauchler_Adv_MAD\/",
+    "B14778957D60C6D2FB582B8C5E93820323584195" : "Spring17_Adv_MAD\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "harrypotter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "harrypotter\/harrypotter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jbrauchler\/jbrauchler_Adv_MAD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "40ADFA06B9E2BA23D297A51FF0EFF4F649B7ABA1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CUATLAS\/Spring17_Adv_MAD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B14778957D60C6D2FB582B8C5E93820323584195"
+    }
+  ]
+}
