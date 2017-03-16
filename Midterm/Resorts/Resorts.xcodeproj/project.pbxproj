@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFF68C391E7AFC5000B00B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF68C381E7AFC5000B00B58 /* AppDelegate.swift */; };
+		FFF68C3B1E7AFC5000B00B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF68C3A1E7AFC5000B00B58 /* ViewController.swift */; };
+		FFF68C3E1E7AFC5000B00B58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF68C3C1E7AFC5000B00B58 /* Main.storyboard */; };
+		FFF68C401E7AFC5000B00B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF68C3F1E7AFC5000B00B58 /* Assets.xcassets */; };
+		FFF68C431E7AFC5000B00B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF68C411E7AFC5000B00B58 /* LaunchScreen.storyboard */; };
+		FFF68C4B1E7AFCB800B00B58 /* resorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFF68C4A1E7AFCB800B00B58 /* resorts.plist */; };
+		FFF68C4D1E7B000A00B00B58 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF68C4C1E7B000A00B00B58 /* DetailViewController.swift */; };
+		FFF68C4F1E7B002A00B00B58 /* Resorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF68C4E1E7B002A00B00B58 /* Resorts.swift */; };
+		FFF68C511E7B007800B00B58 /* AddRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF68C501E7B007800B00B58 /* AddRunViewController.swift */; };
+		FFF68C531E7B009F00B00B58 /* ResortWebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF68C521E7B009F00B00B58 /* ResortWebsiteViewController.swift */; };
+		FFF68C551E7B09F700B00B58 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF68C541E7B09F700B00B58 /* SearchResultsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFF68C351E7AFC5000B00B58 /* Resorts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resorts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF68C381E7AFC5000B00B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFF68C3A1E7AFC5000B00B58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFF68C3D1E7AFC5000B00B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFF68C3F1E7AFC5000B00B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFF68C421E7AFC5000B00B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFF68C441E7AFC5000B00B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF68C4A1E7AFCB800B00B58 /* resorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = resorts.plist; sourceTree = "<group>"; };
+		FFF68C4C1E7B000A00B00B58 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FFF68C4E1E7B002A00B00B58 /* Resorts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resorts.swift; sourceTree = "<group>"; };
+		FFF68C501E7B007800B00B58 /* AddRunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRunViewController.swift; sourceTree = "<group>"; };
+		FFF68C521E7B009F00B00B58 /* ResortWebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResortWebsiteViewController.swift; sourceTree = "<group>"; };
+		FFF68C541E7B09F700B00B58 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFF68C321E7AFC5000B00B58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFF68C2C1E7AFC4F00B00B58 = {
+			isa = PBXGroup;
+			children = (
+				FFF68C371E7AFC5000B00B58 /* Resorts */,
+				FFF68C361E7AFC5000B00B58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFF68C361E7AFC5000B00B58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFF68C351E7AFC5000B00B58 /* Resorts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFF68C371E7AFC5000B00B58 /* Resorts */ = {
+			isa = PBXGroup;
+			children = (
+				FFF68C381E7AFC5000B00B58 /* AppDelegate.swift */,
+				FFF68C3A1E7AFC5000B00B58 /* ViewController.swift */,
+				FFF68C4C1E7B000A00B00B58 /* DetailViewController.swift */,
+				FFF68C4E1E7B002A00B00B58 /* Resorts.swift */,
+				FFF68C501E7B007800B00B58 /* AddRunViewController.swift */,
+				FFF68C521E7B009F00B00B58 /* ResortWebsiteViewController.swift */,
+				FFF68C541E7B09F700B00B58 /* SearchResultsViewController.swift */,
+				FFF68C3C1E7AFC5000B00B58 /* Main.storyboard */,
+				FFF68C3F1E7AFC5000B00B58 /* Assets.xcassets */,
+				FFF68C411E7AFC5000B00B58 /* LaunchScreen.storyboard */,
+				FFF68C441E7AFC5000B00B58 /* Info.plist */,
+				FFF68C4A1E7AFCB800B00B58 /* resorts.plist */,
+			);
+			path = Resorts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFF68C341E7AFC5000B00B58 /* Resorts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF68C471E7AFC5000B00B58 /* Build configuration list for PBXNativeTarget "Resorts" */;
+			buildPhases = (
+				FFF68C311E7AFC5000B00B58 /* Sources */,
+				FFF68C321E7AFC5000B00B58 /* Frameworks */,
+				FFF68C331E7AFC5000B00B58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Resorts;
+			productName = Resorts;
+			productReference = FFF68C351E7AFC5000B00B58 /* Resorts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFF68C2D1E7AFC4F00B00B58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JBrauchler;
+				TargetAttributes = {
+					FFF68C341E7AFC5000B00B58 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D64PZD3J25;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FFF68C301E7AFC4F00B00B58 /* Build configuration list for PBXProject "Resorts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFF68C2C1E7AFC4F00B00B58;
+			productRefGroup = FFF68C361E7AFC5000B00B58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFF68C341E7AFC5000B00B58 /* Resorts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFF68C331E7AFC5000B00B58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF68C431E7AFC5000B00B58 /* LaunchScreen.storyboard in Resources */,
+				FFF68C4B1E7AFCB800B00B58 /* resorts.plist in Resources */,
+				FFF68C401E7AFC5000B00B58 /* Assets.xcassets in Resources */,
+				FFF68C3E1E7AFC5000B00B58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFF68C311E7AFC5000B00B58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF68C4D1E7B000A00B00B58 /* DetailViewController.swift in Sources */,
+				FFF68C531E7B009F00B00B58 /* ResortWebsiteViewController.swift in Sources */,
+				FFF68C3B1E7AFC5000B00B58 /* ViewController.swift in Sources */,
+				FFF68C4F1E7B002A00B00B58 /* Resorts.swift in Sources */,
+				FFF68C391E7AFC5000B00B58 /* AppDelegate.swift in Sources */,
+				FFF68C551E7B09F700B00B58 /* SearchResultsViewController.swift in Sources */,
+				FFF68C511E7B007800B00B58 /* AddRunViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFF68C3C1E7AFC5000B00B58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF68C3D1E7AFC5000B00B58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFF68C411E7AFC5000B00B58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF68C421E7AFC5000B00B58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFF68C451E7AFC5000B00B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFF68C461E7AFC5000B00B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFF68C481E7AFC5000B00B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D64PZD3J25;
+				INFOPLIST_FILE = Resorts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JBrauchler.myApps.Resorts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FFF68C491E7AFC5000B00B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D64PZD3J25;
+				INFOPLIST_FILE = Resorts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JBrauchler.myApps.Resorts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFF68C301E7AFC4F00B00B58 /* Build configuration list for PBXProject "Resorts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF68C451E7AFC5000B00B58 /* Debug */,
+				FFF68C461E7AFC5000B00B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF68C471E7AFC5000B00B58 /* Build configuration list for PBXNativeTarget "Resorts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF68C481E7AFC5000B00B58 /* Debug */,
+				FFF68C491E7AFC5000B00B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFF68C2D1E7AFC4F00B00B58 /* Project object */;
+}
