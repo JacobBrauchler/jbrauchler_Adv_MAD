@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>players</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Nathan Mackinnon</string>
+			<key>position</key>
+			<string>Center</string>
+			<key>url</key>
+			<string>https://www.nhl.com/player/nathan-mackinnon-8477492</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Matt Duchene</string>
+			<key>position</key>
+			<string>Center</string>
+			<key>url</key>
+			<string>https://www.nhl.com/player/matt-duchene-8475168</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Gabriel Landeskog</string>
+			<key>position</key>
+			<string>Left Wing</string>
+			<key>url</key>
+			<string>https://www.nhl.com/player/gabriel-landeskog-8476455</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mikko Rantanen</string>
+			<key>position</key>
+			<string>Right Wing</string>
+			<key>url</key>
+			<string>https://www.nhl.com/player/mikko-rantanen-8478420</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nikita Zadorov</string>
+			<key>position</key>
+			<string>Defense</string>
+			<key>url</key>
+			<string>https://www.nhl.com/player/nikita-zadorov-8477507</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sven Andrighetto</string>
+			<key>position</key>
+			<string>Right Wing</string>
+			<key>key</key>
+			<string>https://www.nhl.com/player/sven-andrighetto-8477413</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mark Barberio</string>
+			<key>position</key>
+			<string>Defense</string>
+			<key>url</key>
+			<string>https://www.nhl.com/player/mark-barberio-8474717</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Calvin Pickard</string>
+			<key>position</key>
+			<string>Goalie</string>
+			<key>url</key>
+			<string>https://www.nhl.com/player/calvin-pickard-8475717</string>
+		</dict>
+	</array>
+</dict>
+</plist>
