@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sports</string>
+    <string name="sports">Sports</string>
+    <string-array name="sports">
+        <item>MLB</item>
+        <item>NFL</item>
+        <item>NHL</item>
+    </string-array>
+    <string name="sport_image">Sport picture</string>
+    <string name="select_favorite">Favorite</string>
+</resources>
