@@ -8,13 +8,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
 
+
 public class CalculateActivity extends Activity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculate);
     }
+
 
     public void buttonClickHandler(View view) {
         EditText mt = (EditText) findViewById(R.id.milesText);
@@ -32,5 +34,13 @@ public class CalculateActivity extends Activity {
         mt.setText(es);
         gt.setText(es);
 
+    }
+
+    public void saveClickHandler(View view) {
+        TextView MPG = (TextView) findViewById(R.id.MPG);
+        Intent intent = new Intent(CalculateActivity.this, SaveMpgActivity.class);
+        intent.putExtra("mpg", MPG.getText().toString());
+
+        startActivity(intent);
     }
 }

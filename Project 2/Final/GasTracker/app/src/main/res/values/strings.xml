@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">GasTracker</string>
+    <string name="action_calculate">Calculate</string>
+    <string name="action_vehicles">Vehicles</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="calculate">calculate</string>
+    <string-array name="vehicles">
+        <item>1998 Toyota 4runner</item>
+        <item>2002 Ford Mustang</item>
+        <item>2002 Honda Accord</item>
+    </string-array>
+    <string-array name="mpgs">
+        <item>20.00</item>
+        <item>19.67</item>
+        <item>19.357</item>
+    </string-array>
 </resources>
