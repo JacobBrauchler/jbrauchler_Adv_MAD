@@ -38,10 +38,10 @@ public class SaveMpgActivity extends Activity {
 
 
     public void saveMpgClickHandler(View view) {
-        TextView MPG = (TextView) findViewById(R.id.MPG);
-        String mpg = MPG.getText().toString();
-        TextView Date = (TextView) findViewById(R.id.CurrentDate);
-        String date = Date.getText().toString();
+//        TextView MPG = (TextView) findViewById(R.id.MPG);
+//        String mpg = MPG.getText().toString();
+//        TextView Date = (TextView) findViewById(R.id.CurrentDate);
+//        String date = Date.getText().toString();
         EditText GasStation = (EditText) findViewById(R.id.gasStation);
         String gasStation = GasStation.getText().toString();
         Spinner spinner = (Spinner)findViewById(R.id.spinner);
