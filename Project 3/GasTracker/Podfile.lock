@@ -1,0 +1,42 @@
+PODS:
+  - Backendless (3.0.44)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.15.1):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.15.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.15.1):
+    - FBSDKCoreKit
+  - IQKeyboardManager (4.0.8)
+  - Realm (2.4.2):
+    - Realm/Headers (= 2.4.2)
+  - Realm/Headers (2.4.2)
+  - RealmSwift (2.4.2):
+    - Realm (= 2.4.2)
+
+DEPENDENCIES:
+  - Backendless
+  - FBSDKCoreKit (~> 4.15.1)
+  - FBSDKLoginKit (~> 4.15.1)
+  - FBSDKShareKit (~> 4.15.1)
+  - IQKeyboardManager
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  Backendless: bd77ad90cbd16fbd85fda03b3659b46a2c8f3179
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: fc7fa53d16b095ee3fd53f0cd59f1df8bcbb634d
+  FBSDKLoginKit: 073f79b3b2e762fc6f54a283fe15f45372d59f5f
+  FBSDKShareKit: 11cbb5a4d7b5fda8143cc95b76188147e6725736
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
+  RealmSwift: 9556c0fe0f0cfecacfb755ae9e68ff379fc6bead
+
+PODFILE CHECKSUM: 691c85fa821e73036b1c570e79083b7d418399e1
+
+COCOAPODS: 1.2.0

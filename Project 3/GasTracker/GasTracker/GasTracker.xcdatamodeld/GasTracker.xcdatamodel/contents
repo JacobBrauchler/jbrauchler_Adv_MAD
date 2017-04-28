@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Mileage" representedClassName="Mileage" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gas_station" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mpg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Vehicle" representedClassName="Vehicle" syncable="YES" codeGenerationType="class">
+        <attribute name="make" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Vehicle" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Mileage" positionX="-54" positionY="9" width="128" height="105"/>
+    </elements>
+</model>

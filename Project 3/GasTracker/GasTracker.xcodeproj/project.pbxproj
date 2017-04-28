@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77EBBA6C3BCA8868A184B432 /* Pods_GasTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C8355866DD1D18EBCDA9D3 /* Pods_GasTracker.framework */; };
+		FFA3457A1E5F6C4F007AFB82 /* vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA345791E5F6C4F007AFB82 /* vehicle.swift */; };
+		FFA3457E1E5F7235007AFB82 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3457D1E5F7235007AFB82 /* VehicleViewController.swift */; };
+		FFA345801E5F74DD007AFB82 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3457F1E5F74DD007AFB82 /* DataViewController.swift */; };
+		FFBC59AA1E859F3C00FB376E /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59A91E859F3C00FB376E /* APIHelper.swift */; };
+		FFBC59B11E85A15A00FB376E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B01E85A15A00FB376E /* MainTabBarController.swift */; };
+		FFBC59B31E85A1C300FB376E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B21E85A1C300FB376E /* Constants.swift */; };
+		FFBC59B51E85AB8B00FB376E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B41E85AB8B00FB376E /* SignInViewController.swift */; };
+		FFBC59B71E85AB9A00FB376E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B61E85AB9A00FB376E /* SignUpViewController.swift */; };
+		FFBC59B91E85ABDA00FB376E /* SignInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B81E85ABDA00FB376E /* SignInNavigationController.swift */; };
+		FFBC59BB1E85B70F00FB376E /* Alerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59BA1E85B70F00FB376E /* Alerter.swift */; };
+		FFDB69D71E6638AC00F4396F /* mpg.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB69D61E6638AC00F4396F /* mpg.swift */; };
+		FFDB69D91E66571400F4396F /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB69D81E66571400F4396F /* VehicleCell.swift */; };
+		FFDB69DB1E66590A00F4396F /* MpgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB69DA1E66590A00F4396F /* MpgCell.swift */; };
+		FFDB69DD1E6A10E500F4396F /* SaveMpgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB69DC1E6A10E300F4396F /* SaveMpgViewController.swift */; };
+		FFDB6A2B1E6F860300F4396F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB6A2A1E6F860200F4396F /* TabBarController.swift */; };
+		FFECB4D71E34711E006E05B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFECB4D61E34711E006E05B9 /* AppDelegate.swift */; };
+		FFECB4DC1E34711E006E05B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFECB4DA1E34711E006E05B9 /* Main.storyboard */; };
+		FFECB4E11E34711E006E05B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFECB4E01E34711E006E05B9 /* Assets.xcassets */; };
+		FFECB4E41E34711E006E05B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFECB4E21E34711E006E05B9 /* LaunchScreen.storyboard */; };
+		FFECB51C1E369852006E05B9 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFECB51B1E369852006E05B9 /* CalculateViewController.swift */; };
+		FFECB5221E3698D1006E05B9 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFECB5211E3698D1006E05B9 /* SaveViewController.swift */; };
+		FFECB5241E37D202006E05B9 /* AddVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFECB5231E37D202006E05B9 /* AddVehicleViewController.swift */; };
+		FFF68C7B1E807CB600B00B58 /* MileageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF68C7A1E807CB400B00B58 /* MileageDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		286D1D5B90C5D8237E8B3939 /* Pods-GasTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-GasTracker/Pods-GasTracker.release.xcconfig"; sourceTree = "<group>"; };
+		4B4A3828DA6BE8032C37BF06 /* Pods-GasTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GasTracker/Pods-GasTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C8355866DD1D18EBCDA9D3 /* Pods_GasTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA345791E5F6C4F007AFB82 /* vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vehicle.swift; sourceTree = "<group>"; };
+		FFA3457D1E5F7235007AFB82 /* VehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		FFA3457F1E5F74DD007AFB82 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		FFBC59A81E859E4800FB376E /* GasTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GasTracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFBC59A91E859F3C00FB376E /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		FFBC59B01E85A15A00FB376E /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FFBC59B21E85A1C300FB376E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FFBC59B41E85AB8B00FB376E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FFBC59B61E85AB9A00FB376E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FFBC59B81E85ABDA00FB376E /* SignInNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInNavigationController.swift; sourceTree = "<group>"; };
+		FFBC59BA1E85B70F00FB376E /* Alerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerter.swift; sourceTree = "<group>"; };
+		FFDB69D61E6638AC00F4396F /* mpg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mpg.swift; sourceTree = "<group>"; };
+		FFDB69D81E66571400F4396F /* VehicleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		FFDB69DA1E66590A00F4396F /* MpgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MpgCell.swift; sourceTree = "<group>"; };
+		FFDB69DC1E6A10E300F4396F /* SaveMpgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveMpgViewController.swift; sourceTree = "<group>"; };
+		FFDB6A2A1E6F860200F4396F /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FFECB4D31E34711E006E05B9 /* GasTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFECB4D61E34711E006E05B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFECB4DB1E34711E006E05B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFECB4E01E34711E006E05B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFECB4E31E34711E006E05B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFECB4E51E34711E006E05B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFECB51B1E369852006E05B9 /* CalculateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		FFECB5211E3698D1006E05B9 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		FFECB5231E37D202006E05B9 /* AddVehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVehicleViewController.swift; sourceTree = "<group>"; };
+		FFF68C7A1E807CB400B00B58 /* MileageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MileageDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFECB4D01E34711E006E05B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EBBA6C3BCA8868A184B432 /* Pods_GasTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AB33F70417AA2F61DF478E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B4A3828DA6BE8032C37BF06 /* Pods-GasTracker.debug.xcconfig */,
+				286D1D5B90C5D8237E8B3939 /* Pods-GasTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F067D2643ED6261A8250531D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6C8355866DD1D18EBCDA9D3 /* Pods_GasTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFBC59AC1E859F9600FB376E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFDB69D61E6638AC00F4396F /* mpg.swift */,
+				FFA345791E5F6C4F007AFB82 /* vehicle.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FFBC59AD1E859FA800FB376E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFECB51B1E369852006E05B9 /* CalculateViewController.swift */,
+				FFECB5211E3698D1006E05B9 /* SaveViewController.swift */,
+				FFA3457D1E5F7235007AFB82 /* VehicleViewController.swift */,
+				FFECB5231E37D202006E05B9 /* AddVehicleViewController.swift */,
+				FFDB69DC1E6A10E300F4396F /* SaveMpgViewController.swift */,
+				FFA3457F1E5F74DD007AFB82 /* DataViewController.swift */,
+				FFF68C7A1E807CB400B00B58 /* MileageDetailViewController.swift */,
+				FFBC59B01E85A15A00FB376E /* MainTabBarController.swift */,
+				FFBC59B41E85AB8B00FB376E /* SignInViewController.swift */,
+				FFBC59B61E85AB9A00FB376E /* SignUpViewController.swift */,
+				FFBC59B81E85ABDA00FB376E /* SignInNavigationController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFBC59AE1E859FBB00FB376E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FFDB69D81E66571400F4396F /* VehicleCell.swift */,
+				FFDB69DA1E66590A00F4396F /* MpgCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FFBC59AF1E859FF200FB376E /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FFDB6A2A1E6F860200F4396F /* TabBarController.swift */,
+				FFBC59A91E859F3C00FB376E /* APIHelper.swift */,
+				FFBC59B21E85A1C300FB376E /* Constants.swift */,
+				FFBC59BA1E85B70F00FB376E /* Alerter.swift */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		FFECB4CA1E34711E006E05B9 = {
+			isa = PBXGroup;
+			children = (
+				FFECB4D51E34711E006E05B9 /* GasTracker */,
+				FFECB4D41E34711E006E05B9 /* Products */,
+				8AB33F70417AA2F61DF478E7 /* Pods */,
+				F067D2643ED6261A8250531D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFECB4D41E34711E006E05B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFECB4D31E34711E006E05B9 /* GasTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFECB4D51E34711E006E05B9 /* GasTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FFECB4D61E34711E006E05B9 /* AppDelegate.swift */,
+				FFECB4DA1E34711E006E05B9 /* Main.storyboard */,
+				FFECB4E21E34711E006E05B9 /* LaunchScreen.storyboard */,
+				FFBC59AC1E859F9600FB376E /* Models */,
+				FFBC59AD1E859FA800FB376E /* View Controllers */,
+				FFBC59AE1E859FBB00FB376E /* Cells */,
+				FFBC59AF1E859FF200FB376E /* Helper Classes */,
+				FFBC59A81E859E4800FB376E /* GasTracker-Bridging-Header.h */,
+				FFECB4E01E34711E006E05B9 /* Assets.xcassets */,
+				FFECB4E51E34711E006E05B9 /* Info.plist */,
+			);
+			path = GasTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFECB4D21E34711E006E05B9 /* GasTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFECB4E81E34711F006E05B9 /* Build configuration list for PBXNativeTarget "GasTracker" */;
+			buildPhases = (
+				C4E5B77D3AA7460EC9208ABF /* [CP] Check Pods Manifest.lock */,
+				FFECB4CF1E34711E006E05B9 /* Sources */,
+				FFECB4D01E34711E006E05B9 /* Frameworks */,
+				FFECB4D11E34711E006E05B9 /* Resources */,
+				8CA17D6B81B64823C7FC298E /* [CP] Embed Pods Frameworks */,
+				9653CC0E523CF8E3971C79A3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GasTracker;
+			productName = GasTracker;
+			productReference = FFECB4D31E34711E006E05B9 /* GasTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFECB4CB1E34711E006E05B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JBrauchler;
+				TargetAttributes = {
+					FFECB4D21E34711E006E05B9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D64PZD3J25;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FFECB4CE1E34711E006E05B9 /* Build configuration list for PBXProject "GasTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFECB4CA1E34711E006E05B9;
+			productRefGroup = FFECB4D41E34711E006E05B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFECB4D21E34711E006E05B9 /* GasTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFECB4D11E34711E006E05B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFECB4E41E34711E006E05B9 /* LaunchScreen.storyboard in Resources */,
+				FFECB4E11E34711E006E05B9 /* Assets.xcassets in Resources */,
+				FFECB4DC1E34711E006E05B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CA17D6B81B64823C7FC298E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GasTracker/Pods-GasTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9653CC0E523CF8E3971C79A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GasTracker/Pods-GasTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E5B77D3AA7460EC9208ABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFECB4CF1E34711E006E05B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBC59AA1E859F3C00FB376E /* APIHelper.swift in Sources */,
+				FFDB69D71E6638AC00F4396F /* mpg.swift in Sources */,
+				FFBC59B11E85A15A00FB376E /* MainTabBarController.swift in Sources */,
+				FFECB5241E37D202006E05B9 /* AddVehicleViewController.swift in Sources */,
+				FFECB51C1E369852006E05B9 /* CalculateViewController.swift in Sources */,
+				FFA3457A1E5F6C4F007AFB82 /* vehicle.swift in Sources */,
+				FFBC59B71E85AB9A00FB376E /* SignUpViewController.swift in Sources */,
+				FFA345801E5F74DD007AFB82 /* DataViewController.swift in Sources */,
+				FFBC59B51E85AB8B00FB376E /* SignInViewController.swift in Sources */,
+				FFBC59B31E85A1C300FB376E /* Constants.swift in Sources */,
+				FFA3457E1E5F7235007AFB82 /* VehicleViewController.swift in Sources */,
+				FFBC59BB1E85B70F00FB376E /* Alerter.swift in Sources */,
+				FFDB69DB1E66590A00F4396F /* MpgCell.swift in Sources */,
+				FFBC59B91E85ABDA00FB376E /* SignInNavigationController.swift in Sources */,
+				FFDB69D91E66571400F4396F /* VehicleCell.swift in Sources */,
+				FFF68C7B1E807CB600B00B58 /* MileageDetailViewController.swift in Sources */,
+				FFECB4D71E34711E006E05B9 /* AppDelegate.swift in Sources */,
+				FFDB6A2B1E6F860300F4396F /* TabBarController.swift in Sources */,
+				FFECB5221E3698D1006E05B9 /* SaveViewController.swift in Sources */,
+				FFDB69DD1E6A10E500F4396F /* SaveMpgViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFECB4DA1E34711E006E05B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFECB4DB1E34711E006E05B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFECB4E21E34711E006E05B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFECB4E31E34711E006E05B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFECB4E61E34711E006E05B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFECB4E71E34711E006E05B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFECB4E91E34711F006E05B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B4A3828DA6BE8032C37BF06 /* Pods-GasTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D64PZD3J25;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = GasTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JBrauchler.myApps.GasTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GasTracker/GasTracker-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FFECB4EA1E34711F006E05B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286D1D5B90C5D8237E8B3939 /* Pods-GasTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D64PZD3J25;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = GasTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JBrauchler.myApps.GasTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GasTracker/GasTracker-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFECB4CE1E34711E006E05B9 /* Build configuration list for PBXProject "GasTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFECB4E61E34711E006E05B9 /* Debug */,
+				FFECB4E71E34711E006E05B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFECB4E81E34711F006E05B9 /* Build configuration list for PBXNativeTarget "GasTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFECB4E91E34711F006E05B9 /* Debug */,
+				FFECB4EA1E34711F006E05B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFECB4CB1E34711E006E05B9 /* Project object */;
+}

@@ -1,0 +1,12 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Bolts" "$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit" "$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit" "$PODS_CONFIGURATION_BUILD_DIR/FBSDKShareKit" "$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager" "$PODS_CONFIGURATION_BUILD_DIR/Realm" "$PODS_CONFIGURATION_BUILD_DIR/RealmSwift"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Backendless"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "$(SRCROOT)/Pods/Backendless/SDK/ios/backendless" "$(SRCROOT)/Pods/Backendless/SDK/ios/CommLibiOS"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Bolts/Bolts.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit/FBSDKCoreKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit/FBSDKLoginKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBSDKShareKit/FBSDKShareKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager/IQKeyboardManager.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Realm/Realm.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RealmSwift/RealmSwift.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Backendless"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CommLibiOS" -l"backendless" -l"sqlite3" -l"z" -framework "Bolts" -framework "CFNetwork" -framework "CoreData" -framework "CoreGraphics" -framework "CoreLocation" -framework "FBSDKCoreKit" -framework "FBSDKLoginKit" -framework "FBSDKShareKit" -framework "Foundation" -framework "IQKeyboardManager" -framework "MapKit" -framework "Realm" -framework "RealmSwift" -framework "SafariServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
