@@ -11,6 +11,7 @@ import FBSDKLoginKit
 public enum SignInError: Error {
     case noEmail
     case noPassword
+    case confirmPasswordNotEqualToPassword
     case fault(String)
 }
 
@@ -32,9 +33,10 @@ class APIHelper: NSObject {
     func initializeBackendless() {
         backendless?.initApp(Constants.BACKENDLESS_APP_ID, secret:Constants.BACKENDLESS_SECRET_KEY, version:Constants.BACKENDLESS_VERSION_NUM)
     }
-    func registerUser(withUsersEmail email:String, withUsersPassword password:String,completionHandler:@escaping (String?) -> ()) throws {
+    func registerUser(withUsersEmail email:String, withUsersPassword password:String, andConfirmPassword confirmPassword:String, completionHandler:@escaping (String?) -> ()) throws {
         guard email != "" else {throw SignInError.noEmail}
         guard password != "" else {throw SignInError.noPassword}
+        guard password == confirmPassword else {throw SignInError.confirmPasswordNotEqualToPassword}
         
         let user = BackendlessUser()
         user.email = email as NSString!

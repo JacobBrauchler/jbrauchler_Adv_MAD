@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		77EBBA6C3BCA8868A184B432 /* Pods_GasTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C8355866DD1D18EBCDA9D3 /* Pods_GasTracker.framework */; };
+		FF8174391EB7A8A500A6E814 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8174381EB7A8A500A6E814 /* SignUpViewController.swift */; };
+		FF81743B1EB7AE6200A6E814 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81743A1EB7AE6200A6E814 /* SettingsViewController.swift */; };
 		FFA3457A1E5F6C4F007AFB82 /* vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA345791E5F6C4F007AFB82 /* vehicle.swift */; };
 		FFA3457E1E5F7235007AFB82 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3457D1E5F7235007AFB82 /* VehicleViewController.swift */; };
 		FFA345801E5F74DD007AFB82 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3457F1E5F74DD007AFB82 /* DataViewController.swift */; };
@@ -15,7 +17,6 @@
 		FFBC59B11E85A15A00FB376E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B01E85A15A00FB376E /* MainTabBarController.swift */; };
 		FFBC59B31E85A1C300FB376E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B21E85A1C300FB376E /* Constants.swift */; };
 		FFBC59B51E85AB8B00FB376E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B41E85AB8B00FB376E /* SignInViewController.swift */; };
-		FFBC59B71E85AB9A00FB376E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B61E85AB9A00FB376E /* SignUpViewController.swift */; };
 		FFBC59B91E85ABDA00FB376E /* SignInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59B81E85ABDA00FB376E /* SignInNavigationController.swift */; };
 		FFBC59BB1E85B70F00FB376E /* Alerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC59BA1E85B70F00FB376E /* Alerter.swift */; };
 		FFDB69D71E6638AC00F4396F /* mpg.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB69D61E6638AC00F4396F /* mpg.swift */; };
@@ -37,6 +38,8 @@
 		286D1D5B90C5D8237E8B3939 /* Pods-GasTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-GasTracker/Pods-GasTracker.release.xcconfig"; sourceTree = "<group>"; };
 		4B4A3828DA6BE8032C37BF06 /* Pods-GasTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GasTracker/Pods-GasTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		F6C8355866DD1D18EBCDA9D3 /* Pods_GasTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8174381EB7A8A500A6E814 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FF81743A1EB7AE6200A6E814 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FFA345791E5F6C4F007AFB82 /* vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vehicle.swift; sourceTree = "<group>"; };
 		FFA3457D1E5F7235007AFB82 /* VehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
 		FFA3457F1E5F74DD007AFB82 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +48,6 @@
 		FFBC59B01E85A15A00FB376E /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FFBC59B21E85A1C300FB376E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFBC59B41E85AB8B00FB376E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		FFBC59B61E85AB9A00FB376E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FFBC59B81E85ABDA00FB376E /* SignInNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInNavigationController.swift; sourceTree = "<group>"; };
 		FFBC59BA1E85B70F00FB376E /* Alerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerter.swift; sourceTree = "<group>"; };
 		FFDB69D61E6638AC00F4396F /* mpg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mpg.swift; sourceTree = "<group>"; };
@@ -115,8 +117,9 @@
 				FFF68C7A1E807CB400B00B58 /* MileageDetailViewController.swift */,
 				FFBC59B01E85A15A00FB376E /* MainTabBarController.swift */,
 				FFBC59B41E85AB8B00FB376E /* SignInViewController.swift */,
-				FFBC59B61E85AB9A00FB376E /* SignUpViewController.swift */,
+				FF8174381EB7A8A500A6E814 /* SignUpViewController.swift */,
 				FFBC59B81E85ABDA00FB376E /* SignInNavigationController.swift */,
+				FF81743A1EB7AE6200A6E814 /* SettingsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -302,11 +305,11 @@
 			files = (
 				FFBC59AA1E859F3C00FB376E /* APIHelper.swift in Sources */,
 				FFDB69D71E6638AC00F4396F /* mpg.swift in Sources */,
+				FF81743B1EB7AE6200A6E814 /* SettingsViewController.swift in Sources */,
 				FFBC59B11E85A15A00FB376E /* MainTabBarController.swift in Sources */,
 				FFECB5241E37D202006E05B9 /* AddVehicleViewController.swift in Sources */,
 				FFECB51C1E369852006E05B9 /* CalculateViewController.swift in Sources */,
 				FFA3457A1E5F6C4F007AFB82 /* vehicle.swift in Sources */,
-				FFBC59B71E85AB9A00FB376E /* SignUpViewController.swift in Sources */,
 				FFA345801E5F74DD007AFB82 /* DataViewController.swift in Sources */,
 				FFBC59B51E85AB8B00FB376E /* SignInViewController.swift in Sources */,
 				FFBC59B31E85A1C300FB376E /* Constants.swift in Sources */,
@@ -315,6 +318,7 @@
 				FFDB69DB1E66590A00F4396F /* MpgCell.swift in Sources */,
 				FFBC59B91E85ABDA00FB376E /* SignInNavigationController.swift in Sources */,
 				FFDB69D91E66571400F4396F /* VehicleCell.swift in Sources */,
+				FF8174391EB7A8A500A6E814 /* SignUpViewController.swift in Sources */,
 				FFF68C7B1E807CB600B00B58 /* MileageDetailViewController.swift in Sources */,
 				FFECB4D71E34711E006E05B9 /* AppDelegate.swift in Sources */,
 				FFDB6A2B1E6F860300F4396F /* TabBarController.swift in Sources */,

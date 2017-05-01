@@ -9,6 +9,19 @@
 import UIKit
 
 class Alerter: NSObject {
+    class func giveAlertForConfirmPasswordError(viewController:UIViewController) {
+        let alertController = UIAlertController(title: "Error!",
+                                                message: "You Have Entered Two Different Passwords!",
+                                                preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: "OK",
+                                        style: .default,
+                                        handler: nil)
+        
+        alertController.addAction(alertAction)
+        viewController.present(alertController, animated: true, completion: nil)
+        
+    }
     class func giveAlertIfUserDidNotProvideEmail(viewController:UIViewController) {
         let alertController = UIAlertController(title: "Error!",
                                                 message: "No Email",
@@ -54,34 +67,4 @@ class Alerter: NSObject {
         
     }
     
-    /**
-     This sets an alert if the user did not enter a name for their Wine OR take a picture of thier Wine.
-     
-     ## Important Notes ##
-     1. WineCreationError.NoName = user did not enter a name
-     2. WineCreationError.NoImage = user did not enter an image
-     */
-    //class func showAlertForErrorWhileAddingWineToCellar(withError error:WineCreationError, presentOnTopOfViewController viewController:UIViewController) {
-        //var errorMessage:String!
-        //switch error {
-        //case .NoName: errorMessage = "You did not enter a Wine Name!"
-        //
-        //case .NoImage: errorMessage = "You did not enter a photo for your wine!"
-            //
-            
-        //default: break
-            //
-        //}
-        //let alertController = UIAlertController(title: "Error!",
-                                                //message: errorMessage,
-                                                //preferredStyle: .alert)
-    
-        //let alertAction = UIAlertAction(title: "OK", style:
-            //.default, handler: nil)
-        
-        //alertController.addAction(alertAction)
-        //viewController.present(alertController, animated: true, completion: nil)
-        
-    //}
 }
-

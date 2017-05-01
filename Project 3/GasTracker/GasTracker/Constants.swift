@@ -10,22 +10,18 @@ import Foundation
 struct Constants {
     
     
-    //MARK - WineFeedInfo Fetch All Endpoint
-    static let kWineFeedInfoEndpoint = "http://api.backendless.com/v1/data/WineForFeed"
-    
-    static func getEndPoint(withWhereCluase whereClause:String)->String {
-        guard whereClause != "" else {
-            return kWineFeedInfoEndpoint
-        }
-        return kWineFeedInfoEndpoint + "?where= \(whereClause)".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
-    }
+//    //MARK - WineFeedInfo Fetch All Endpoint
+//    static let kWineFeedInfoEndpoint = "http://api.backendless.com/v1/data/WineForFeed"
+//    
+//    static func getEndPoint(withWhereCluase whereClause:String)->String {
+//        guard whereClause != "" else {
+//            return kWineFeedInfoEndpoint
+//        }
+//        return kWineFeedInfoEndpoint + "?where= \(whereClause)".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+//    }
     
     //MARK: MainStoryboard
     static let mainStoryboard = "Main"
-    
-    //MARK: CoreDataModelNames
-    
-    
     
     //MARK: Backendless Stuff
     static let BACKENDLESS_APP_ID = "C50A26B8-3228-C6D5-FF49-1062617C6900"
@@ -35,8 +31,6 @@ struct Constants {
     
     
     //MARK: TableView Identifiers
-    static let feedCellID = "feedCell"
-    static let cellarCell = "cellarCell"
     
     
     //MARK: ViewController Identifiers
@@ -46,14 +40,8 @@ struct Constants {
     
     
     //MARK: Segue Identifiers
-    static let signInSegueIdentifier = "goToApp"
-    static let signUpSegueIdentifier = "goToApp"
-    static let addWineManuallySegueIdentifier = "AddWine"
-    static let wineDetailSegue = "goToWineBottleDetailViewController"
-    static let learnDetailSegue = "goToLearnDetailViewController"
+    static let loggedInIdentifier = "goToApp"
+
     
-    
-    //MARK: UnwindSegue Identifiers
-    static let unwindSegueToCellar = "segueWithUnwindSegue"
 
 }

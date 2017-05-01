@@ -43,13 +43,17 @@ class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
             newMpg.date = dateValue.text!
             newMpg.mpg = MPGValue.text!
             newMpg.gasStation = gasStation.text!
+            
 //            if model == "" {
 //                model = vehicles[0]
 //            }
             DispatchQueue(label: "background").async {
                 let realm = try! Realm()
                 let vehicle = realm.objects(Vehicle.self).filter("model = '\(self.model)'").first
+                self.newMpg.id = (vehicle?.mpgs.count)! + 1
                 self.newMpg.userVehicle = vehicle
+                
+                
                 
                 try! realm.write {
                     vehicle?.mpgs.append(self.newMpg)

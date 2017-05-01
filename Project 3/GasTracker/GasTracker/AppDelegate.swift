@@ -29,14 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        UINavigationBar.appearance().barTintColor = UIColor.init(colorLiteralRed: 145/255, green: 25/255, blue: 23/255, alpha: 1.0)
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
-        
-        //UIApplication.shared.statusBarStyle = .lightContent
+        apiHelper.initializeBackendless()
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
-            statusBar.backgroundColor = UIColor.init(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+            statusBar.backgroundColor = UIColor.white
         }
+        UIApplication.shared.statusBarStyle = .lightContent
         
         if currentUser == nil {
             goToSignIn()
