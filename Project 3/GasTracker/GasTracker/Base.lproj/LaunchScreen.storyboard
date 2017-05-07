@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,22 +26,22 @@
                                 <rect key="frame" x="77" y="256" width="220" height="154"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gas Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz7-e2-2lz">
-                                <rect key="frame" x="116" y="132" width="142" height="22"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
+                                <rect key="frame" x="107" y="132" width="161" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="uz7-e2-2lz" secondAttribute="trailing" constant="101" id="BUQ-C3-qnc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uz7-e2-2lz" secondAttribute="trailing" constant="91" id="2yc-6w-vRH"/>
+                            <constraint firstItem="uz7-e2-2lz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="91" id="AcV-Fn-Lx0"/>
                             <constraint firstItem="e4E-AP-z4G" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="61" id="GfM-53-vVx"/>
                             <constraint firstItem="e4E-AP-z4G" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="JOG-1H-g9N"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e4E-AP-z4G" secondAttribute="bottom" constant="257" id="KLB-0q-gOy"/>
+                            <constraint firstItem="e4E-AP-z4G" firstAttribute="top" secondItem="uz7-e2-2lz" secondAttribute="bottom" constant="94" id="Qn6-Eg-G6a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e4E-AP-z4G" secondAttribute="trailing" constant="62" id="jkw-Ug-Y9Z"/>
-                            <constraint firstItem="e4E-AP-z4G" firstAttribute="leading" secondItem="uz7-e2-2lz" secondAttribute="trailing" constant="-181" id="kxn-ly-Q6F"/>
                             <constraint firstItem="uz7-e2-2lz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="112" id="pe8-ID-bgY"/>
-                            <constraint firstItem="uz7-e2-2lz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="100" id="sk0-Aa-uBJ"/>
                         </constraints>
                     </view>
                 </viewController>
