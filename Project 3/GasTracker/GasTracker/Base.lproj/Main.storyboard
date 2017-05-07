@@ -540,13 +540,7 @@
                             <outlet property="delegate" destination="ToX-vB-pys" id="mpf-16-GNQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Mpg Data" id="PTs-YK-vwD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UDN-WZ-bST">
-                            <connections>
-                                <segue destination="WyK-cL-f0i" kind="show" id="ROe-lQ-CUu"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Mpg Data" id="PTs-YK-vwD"/>
                     <connections>
                         <outlet property="DataView" destination="zj9-nl-BkQ" id="pp4-yh-TBC"/>
                     </connections>
@@ -722,10 +716,10 @@
             </objects>
             <point key="canvasLocation" x="1896.8" y="751.57421289355329"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="PKh-ZG-plc">
             <objects>
-                <tableViewController id="eMT-hn-X56" sceneMemberID="viewController">
+                <tableViewController id="eMT-hn-X56" customClass="SettingsViewController" customModule="GasTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ugl-u3-bc2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -747,7 +741,7 @@
                                                         <color key="titleColor" red="1" green="0.14868822949999999" blue="0.1483225242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="ceZ-FD-ntH" kind="show" identifier="goToSignIn" id="tiO-zG-6yu"/>
+                                                        <segue destination="ceZ-FD-ntH" kind="presentation" identifier="goToSignIn" id="tiO-zG-6yu"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -768,8 +762,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="a3J-91-9LZ"/>
+                    <connections>
+                        <segue destination="IY8-sE-VVg" kind="unwind" identifier="userPressedSignOutWithSegue" unwindAction="userPressedSignOutWithSegue:" id="RFX-Vy-I9M"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgr-W3-Qex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IY8-sE-VVg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1052" y="-844.22788605697156"/>
         </scene>
@@ -780,7 +778,7 @@
                     <tabBarItem key="tabBarItem" title="Vehicles" image="vehicle" id="SXG-UT-qfa"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6jk-u8-Sio">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6jk-u8-Sio">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.098039215690000001" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
@@ -806,7 +804,7 @@
                 <navigationController storyboardIdentifier="SignInNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ceZ-FD-ntH" customClass="SignInNavigationController" customModule="GasTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Gfc-1I-QJh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gfc-1I-QJh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.098039215690000001" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
@@ -831,7 +829,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CW9-VV-ewa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="1yR-w2-ePw"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rRy-Zz-bHc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rRy-Zz-bHc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.098039215690000001" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
@@ -864,7 +862,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XUc-mN-YjX">
-                                <rect key="frame" x="8" y="537" width="359" height="120"/>
+                                <rect key="frame" x="8" y="488" width="359" height="120"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vxx-en-hxd">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
@@ -986,7 +984,7 @@
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp1-z7-3yC">
-                                <rect key="frame" x="8" y="629" width="359" height="30"/>
+                                <rect key="frame" x="8" y="580" width="359" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="No Account? Sign Up">
                                     <color key="titleColor" red="0.56862745100000001" green="0.098039215690000001" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>

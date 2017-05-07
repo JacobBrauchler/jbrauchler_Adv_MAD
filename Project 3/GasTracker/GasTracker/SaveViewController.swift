@@ -13,6 +13,7 @@ class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
     
     @IBOutlet weak var gasStation: UITextField!
     var vehicles = realm.objects(Vehicle.self)
+    var mpgs = realm.objects(Mpg.self)
     var calculationString: String!
     let date = Date()
     var selected: String = ""
@@ -43,6 +44,7 @@ class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
             newMpg.date = dateValue.text!
             newMpg.mpg = MPGValue.text!
             newMpg.gasStation = gasStation.text!
+            newMpg.id = (mpgs.count) + 1
             
 //            if model == "" {
 //                model = vehicles[0]
@@ -50,7 +52,7 @@ class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
             DispatchQueue(label: "background").async {
                 let realm = try! Realm()
                 let vehicle = realm.objects(Vehicle.self).filter("model = '\(self.model)'").first
-                self.newMpg.id = (vehicle?.mpgs.count)! + 1
+                
                 self.newMpg.userVehicle = vehicle
                 
                 
