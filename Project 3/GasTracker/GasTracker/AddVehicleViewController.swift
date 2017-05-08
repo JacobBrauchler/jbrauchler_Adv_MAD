@@ -1,3 +1,4 @@
+
 //
 //  AddVehicleViewController.swift
 //  GasTracker
@@ -14,9 +15,10 @@ class AddVehicleViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var make: UITextField!
     @IBOutlet weak var model: UITextField!
     @IBOutlet weak var year: UITextField!
-    
+    var backendless = Backendless.sharedInstance()
     var vehicles = realm.objects(Vehicle.self)
     var newVehicle = Vehicle()
+    var id = ""
     
     @IBAction func doneTapped(_ sender: Any) {
         if  (make.text?.isEmpty)! || (model.text?.isEmpty)! || (year.text?.isEmpty)! {
@@ -34,6 +36,8 @@ class AddVehicleViewController: UIViewController, UITextFieldDelegate {
             newVehicle.model = model.text!
             newVehicle.year = year.text!
             newVehicle.id = vehicles.count + 1
+            saveNewVehicle(realmvehicle: newVehicle)
+            newVehicle.objectId = id
             
             //save variable to the database
             try! realm.write {
@@ -70,6 +74,40 @@ class AddVehicleViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
+    //var backendless = Backendless.sharedInstance()
+    func saveNewVehicle(realmvehicle: Vehicle) {
+        
+        let vehicle = backendlessVehicle()
+        vehicle.make = realmvehicle.make
+        vehicle.model = realmvehicle.model
+        vehicle.year = realmvehicle.year
+        //vehicle.mpgs = [backendlessMpg]()
+        let dataStore = backendless?.data.of(backendlessVehicle.ofClass())
+        
+        // save object synchronously
+        var error: Fault?
+        let result = dataStore?.save(vehicle, fault: &error) as? backendlessVehicle
+        if error == nil {
+            print("Vehicle has been saved: \(result!.objectId)")
+            id = result!.objectId!
+        }
+        else {
+            print("Server reported an error: \(error)")
+        }
+        
+        // save object asynchronously
+        //        dataStore.save(
+        //            contact,
+        //            response: { (result: AnyObject!) -> Void in
+        //                let obj = result as! Contact
+        //                print("Contact has been saved: \(obj.objectId)")
+        //        },
+        //            error: { (fault: Fault!) -> Void in
+        //                print("fServer reported an error: \(fault)")
+        //        })
+    }
+
 
 
     /*

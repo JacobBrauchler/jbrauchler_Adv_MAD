@@ -26,7 +26,7 @@ class MileageDetailViewController: UIViewController {
         super.viewDidLoad()
         vehicle = vehicles[selectedVehicle]
         mileage = vehicle.mpgs[selectedMileage]
-        dateLabel.text = mileage.date
+        dateLabel.text = mileage.dateForMpg
         mpgLabel.text = mileage.mpg
         //let year = mileage.userVehicle?.year
         vehicleLabel.text = "\(mileage.userVehicle!.year) \(mileage.userVehicle!.make) \(mileage.userVehicle!.model)"

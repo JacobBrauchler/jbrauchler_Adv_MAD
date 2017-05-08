@@ -35,7 +35,7 @@ class SaveMpgViewController: UIViewController, UITextFieldDelegate, UIPickerView
             //present the Alert
             self.present(alert, animated: true, completion: nil)
         }else {
-            newMpg.date = dateTextField.text!
+            newMpg.dateForMpg = dateTextField.text!
             newMpg.mpg = ("\(mpgTextField.text!) MPG")
             newMpg.gasStation = gasStationTextField.text!
             DispatchQueue(label: "background").async {

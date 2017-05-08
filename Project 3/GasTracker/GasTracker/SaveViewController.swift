@@ -12,6 +12,7 @@ import RealmSwift
 class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var gasStation: UITextField!
+    var backendless = Backendless.sharedInstance()
     var vehicles = realm.objects(Vehicle.self)
     var mpgs = realm.objects(Mpg.self)
     var calculationString: String!
@@ -21,6 +22,7 @@ class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
     let formatter = DateFormatter()
     var vehicleNames = [""]
     var model = ""
+    var id = ""
     
     @IBOutlet weak var MPGValue: UILabel!
     @IBOutlet weak var vehiclePicker: UIPickerView!
@@ -29,6 +31,7 @@ class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
     
     
     var newMpg = Mpg()
+    var newBackendlessMpg = backendlessMpg()
     
     @IBAction func doneTapped(_ sender: Any) {
         if  (gasStation.text?.isEmpty)! {
@@ -41,10 +44,16 @@ class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
             //present the Alert
             self.present(alert, animated: true, completion: nil)
         }else {
-            newMpg.date = dateValue.text!
+            newMpg.dateForMpg = dateValue.text!
             newMpg.mpg = MPGValue.text!
             newMpg.gasStation = gasStation.text!
             newMpg.id = (mpgs.count) + 1
+            
+            newBackendlessMpg.dateForMpg = dateValue.text!
+            newBackendlessMpg.mpg = MPGValue.text!
+            newBackendlessMpg.gasStation = gasStation.text!
+            
+            
             
 //            if model == "" {
 //                model = vehicles[0]
@@ -52,28 +61,46 @@ class SaveViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
             DispatchQueue(label: "background").async {
                 let realm = try! Realm()
                 let vehicle = realm.objects(Vehicle.self).filter("model = '\(self.model)'").first
-                
+                self.updateVehicle(realmVehicle: vehicle!, mpg: self.newBackendlessMpg)
                 self.newMpg.userVehicle = vehicle
-                
-                
-                
+                self.newMpg.objectId = self.id
                 try! realm.write {
                     vehicle?.mpgs.append(self.newMpg)
                     realm.add(vehicle!, update: true)
                 }
+                
+                
             }
-        
-
-
-            //let vehicle = realm.objects(Vehicle.self).filter("model = '\(newMpg.userVehicle?.model)'")
-//            try! realm.write {
-//                
-//                //realm.add(newMpg)
-//            }
         }
+        
         performSegue(withIdentifier: "goToVehicles", sender: self)
         
     }
+    
+    
+    func updateVehicle(realmVehicle: Vehicle, mpg: backendlessMpg) {
+        
+        let dataStore = Backendless.sharedInstance().data.of(Vehicle.ofClass())
+        var error: Fault?
+        let vehicle = backendlessVehicle()
+        vehicle.make = realmVehicle.make
+        vehicle.model = realmVehicle.model
+        vehicle.year = realmVehicle.year
+        //vehicle.mpgs.append(mpg)
+        vehicle.objectId = realmVehicle.objectId
+        mpg.userVehicle = vehicle
+        let result = dataStore?.save(mpg, fault: &error) as? backendlessMpg
+        let updatedVehicle = dataStore?.save(vehicle, fault: &error) as? backendlessVehicle
+        if error == nil {
+            print("Vehicle has been updated: \(updatedVehicle!.objectId)")
+            id = (result?.objectId)!
+        }
+        else {
+            print("Server reported an error (2): \(error)")
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

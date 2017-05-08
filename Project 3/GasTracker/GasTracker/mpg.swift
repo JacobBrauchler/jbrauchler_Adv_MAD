@@ -13,7 +13,8 @@ class Mpg : Object {
     dynamic var id = 0
     dynamic var mpg = String()
     dynamic var gasStation = String()
-    dynamic var date = String()
+    dynamic var dateForMpg = String()
+    dynamic var objectId = String()
 //    dynamic var price = String()
 //    dynamic var fuelGrade = String()
     dynamic var userVehicle: Vehicle?
@@ -21,4 +22,13 @@ class Mpg : Object {
         return "id"
     }
     //let userVehicle = LinkingObjects(fromType: Vehicle.self, property: "mpgs")
+}
+
+class backendlessMpg : NSObject {
+    var objectId : String?
+    var mpg = String()
+    var gasStation = String()
+    var dateForMpg = String()
+    var userVehicle = backendlessVehicle()
+    
 }

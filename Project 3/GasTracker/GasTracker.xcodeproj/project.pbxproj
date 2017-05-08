@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77EBBA6C3BCA8868A184B432 /* Pods_GasTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C8355866DD1D18EBCDA9D3 /* Pods_GasTracker.framework */; };
+		FF61D8871EC0D6A00087A852 /* BackendlessHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61D8861EC0D6A00087A852 /* BackendlessHelper.swift */; };
 		FF8174391EB7A8A500A6E814 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8174381EB7A8A500A6E814 /* SignUpViewController.swift */; };
 		FF81743B1EB7AE6200A6E814 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81743A1EB7AE6200A6E814 /* SettingsViewController.swift */; };
 		FFA3457A1E5F6C4F007AFB82 /* vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA345791E5F6C4F007AFB82 /* vehicle.swift */; };
@@ -38,6 +39,7 @@
 		286D1D5B90C5D8237E8B3939 /* Pods-GasTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-GasTracker/Pods-GasTracker.release.xcconfig"; sourceTree = "<group>"; };
 		4B4A3828DA6BE8032C37BF06 /* Pods-GasTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GasTracker/Pods-GasTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		F6C8355866DD1D18EBCDA9D3 /* Pods_GasTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF61D8861EC0D6A00087A852 /* BackendlessHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendlessHelper.swift; sourceTree = "<group>"; };
 		FF8174381EB7A8A500A6E814 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FF81743A1EB7AE6200A6E814 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FFA345791E5F6C4F007AFB82 /* vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vehicle.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				FFBC59A91E859F3C00FB376E /* APIHelper.swift */,
 				FFBC59B21E85A1C300FB376E /* Constants.swift */,
 				FFBC59BA1E85B70F00FB376E /* Alerter.swift */,
+				FF61D8861EC0D6A00087A852 /* BackendlessHelper.swift */,
 			);
 			name = "Helper Classes";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				FFA3457A1E5F6C4F007AFB82 /* vehicle.swift in Sources */,
 				FFA345801E5F74DD007AFB82 /* DataViewController.swift in Sources */,
 				FFBC59B51E85AB8B00FB376E /* SignInViewController.swift in Sources */,
+				FF61D8871EC0D6A00087A852 /* BackendlessHelper.swift in Sources */,
 				FFBC59B31E85A1C300FB376E /* Constants.swift in Sources */,
 				FFA3457E1E5F7235007AFB82 /* VehicleViewController.swift in Sources */,
 				FFBC59BB1E85B70F00FB376E /* Alerter.swift in Sources */,

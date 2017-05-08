@@ -13,6 +13,7 @@ class DataViewController: UITableViewController {
     
     @IBOutlet var DataView: UITableView!
     //var mileages = realm.objects(Mpg.self)
+    var backendless = Backendless.sharedInstance()
     var vehicles = realm.objects(Vehicle.self)
     var selectedVehicle: Int = 0
     var vehicle = Vehicle()
@@ -57,7 +58,7 @@ class DataViewController: UITableViewController {
         cell.mpgLabel?.text = mileage.mpg
         cell.vehicleLabel?.text = mileage.userVehicle?.model
         cell.gasStationLabel?.text = mileage.gasStation
-        cell.dateLabel?.text = mileage.date
+        cell.dateLabel?.text = mileage.dateForMpg
 
         return cell
     }
@@ -75,11 +76,46 @@ class DataViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            var Mpg = vehicle.mpgs[indexPath.row]
+            deleteMpg(realmMpg: Mpg)
             try! realm.write {
-                realm.delete(vehicle.mpgs[indexPath.row])
+                realm.delete(Mpg)
             }
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    func deleteMpg(realmMpg: Mpg) {
+        
+        let mpg = backendlessMpg()
+        mpg.dateForMpg = realmMpg.dateForMpg
+        mpg.gasStation = realmMpg.gasStation
+        mpg.mpg = realmMpg.mpg
+        mpg.objectId = realmMpg.objectId
+//        vehicle.make = realmVehicle.make
+//        vehicle.model = realmVehicle.model
+//        vehicle.year = realmVehicle.year
+//        vehicle.objectId = realmVehicle.objectId
+        
+        let dataStore = backendless?.data.of(backendlessMpg.ofClass())
+        var error: Fault?
+        
+        let savedMpg = dataStore?.save(mpg, fault: &error) as? backendlessMpg
+        if error == nil {
+            print("Mpg has been saved: \(savedMpg!.objectId)")
+            
+            // now delete the saved object
+            let result = dataStore?.remove(savedMpg, fault: &error)
+            if error == nil {
+                print("Mpg has been deleted: \(result)")
+            }
+            else {
+                print("Server reported an error (2): \(error)")
+            }
+        }
+        else {
+            print("Server reported an error (1): \(error)")
         }
     }
  
